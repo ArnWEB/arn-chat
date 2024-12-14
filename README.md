@@ -1,4 +1,3 @@
-# arn-chat
 # Real-Time Chat Application
 
 ## Overview
@@ -20,11 +19,13 @@ This project is a **Real-Time Chat Application** built using **Spring Boot** and
 ## Technology Stack
 
 ### Backend:
+
 - **Java**
 - **Spring Boot**: For building the REST API and WebSocket server.
 - **Spring WebSocket**: For enabling real-time communication.
 
 ### Frontend:
+
 - **Angular**: For building the user interface.
 - **Socket.IO Client**: For WebSocket communication.
 
@@ -33,11 +34,13 @@ This project is a **Real-Time Chat Application** built using **Spring Boot** and
 ## Prerequisites
 
 ### Backend:
+
 - Java 17 or later
 - Maven 3.8.0+
 - Spring Boot 3.x+
 
 ### Frontend:
+
 - Node.js 16+
 - Angular CLI 15+
 
@@ -46,53 +49,50 @@ This project is a **Real-Time Chat Application** built using **Spring Boot** and
 ## Installation
 
 ### Backend Setup:
+
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/realtime-chat-backend.git
-   cd realtime-chat-backend
-   ```
+    
+    ```bash
+    git clone https://github.com/ArnWEB/arn-chat.git
+    cd arn-chat/chat-server
+    
+    ```
+    
 2. Build and run the application:
-   ```bash
-   mvn clean install
-   mvn spring-boot:run
-   ```
+    
+    ```bash
+    mvn clean install
+    mvn spring-boot:run
+    
+    ```
+    
 3. Access the backend API at `http://localhost:8080`.
 
 ### Frontend Setup:
+
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/realtime-chat-frontend.git
-   cd realtime-chat-frontend
-   ```
+    
+    ```bash
+    git clone https://github.com/ArnWEB/arn-chat.git
+    cd arn-chat/chat-ui
+    
+    ```
+    
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+    
+    ```bash
+    npm install
+    
+    ```
+    
 3. Start the Angular application:
-   ```bash
-   ng serve
-   ```
+    
+    ```bash
+    ng serve
+    
+    ```
+    
 4. Access the frontend at `http://localhost:4200`.
-
----
-
-## Configuration
-
-### Backend:
-The WebSocket endpoint is defined in `application.properties`:
-```properties
-server.port=8080
-spring.websocket.endpoint=/chat
-```
-
-### Frontend:
-Update the WebSocket server URL in `environment.ts`:
-```typescript
-export const environment = {
-  production: false,
-  websocketUrl: 'http://localhost:8080/chat'
-};
-```
 
 ---
 
@@ -108,8 +108,9 @@ export const environment = {
 ## WebSocket Endpoints
 
 ### Backend:
-- `/chat`: WebSocket endpoint for managing messages.
-- `/topic/messages`: Topic for broadcasting messages to all connected clients.
+
+- `/ws`: WebSocket endpoint for managing messages.
+- `/topic/public`: Topic for broadcasting messages to all connected clients.
 
 ---
 
@@ -120,12 +121,6 @@ export const environment = {
 3. **Message Dispatcher**: Routes incoming messages to appropriate destinations (e.g., specific rooms or users).
 
 ---
-
-## Screenshots
-
-| **Login Page**                | **Chat Room**                  |
-|-------------------------------|---------------------------------|
-| ![Login](link-to-login-image) | ![Chat Room](link-to-chat-room-image) |
 
 ---
 
@@ -146,13 +141,3 @@ export const environment = {
 5. Open a Pull Request.
 
 ---
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Contact
-
-For any inquiries, please reach out to [your-email@example.com](mailto:your-email@example.com).
