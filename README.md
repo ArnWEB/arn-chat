@@ -124,6 +124,10 @@ This project is a **Real-Time Chat Application** built using **Spring Boot** and
 
 ---
 
+## Screen shots
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cbe83fa8-eb69-4f82-84f7-a60c6a12d536/0830af40-2a17-43da-86bb-5a699f2cc3ea/image.png)
+
 ## Future Enhancements
 
 - Add user presence indicators (online/offline status).
